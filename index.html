@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal English School</title>
+    <!--Tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--Iconos-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!--Style.css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="inicio">
+        <div class="menu contenedor">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-content container">
+                <div class="header-txt">
+                    <h1>Personal English School</h1>
+                    <p>
+                        Aprende inglés de manera efectiva con nuestros cursos para todas las edades. ¡Tu camino hacia la fluidez comienza hoy!
+                    </p>
+                    <a href="https://www.papora.com/es/aprender-ingles/beneficios/" class="btn-1">Beneficios de Aprender Ingles</a>
+                </div>
+                <div class="header-img">
+                    <img src="img/logo2.png" alt="logotipo">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about container" id="nosotros">
+        <div class="about-img">
+            <img src="img/anuncio.png" alt="anuncio">
+        </div>
+        <div class="about-txt">
+            <h2>Nosotros</h2>
+            <p>
+                Personal English School es una empresa dedicada a la enseñanza del idioma inglés a personas de todas las edades, desde niños hasta adultos. Nuestro objetivo es proporcionar una educación de calidad adaptada a las necesidades individuales de cada estudiante, facilitando su aprendizaje en un entorno amigable y dinámico. Ya sea que busques mejorar tu inglés para propósitos académicos, laborales o personales, estamos aquí para acompañarte en cada paso de tu camino hacia la fluidez.
+            </p>
+            <h3>Misión</h3>
+            <p>
+                Nuestra misión es ofrecer un servicio educativo de excelencia en la enseñanza del idioma inglés, utilizando metodologías innovadoras y personalizadas que permitan a nuestros estudiantes alcanzar sus metas lingüísticas. Fomentamos un ambiente de aprendizaje inclusivo y estimulante, asegurando que cada alumno desarrolle confianza y habilidades comunicativas efectivas en inglés.
+            </p>
+            <h3>Visión</h3>
+            <p>
+                Nuestra visión es ser reconocidos como una institución líder en la enseñanza del inglés a nivel local y regional, impactando positivamente en la vida de nuestros estudiantes a través de una educación de calidad que les abra puertas a nuevas oportunidades en el ámbito académico y profesional. Aspiramos a crear una comunidad de hablantes de inglés que puedan comunicarse con el mundo de manera eficaz y segura.
+            </p>
+        </div>
+    </section>
+
+    <main class="Servicios" id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="Servicios-content container">
+    
+            <!-- Servicio 1 - Clases para niños -->
+            <div class="servicio-1">
+                <i class="fas fa-book"></i>
+                <h3>Clases para niños</h3>
+            </div>
+    
+            <!-- Servicio 2 - Clases para adolescentes -->
+            <div class="servicio-1">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Clases para adolescentes</h3>
+            </div>
+    
+            <!-- Servicio 3 - Clases para adultos -->
+            <div class="servicio-1">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Clases para adultos</h3>
+            </div>
+    
+        </div>
+    </main>
+    
+    <section class="formulario container" id="contacto">
+        <form method="post" autocomplete="off">
+            <h2>Registrar Usuario</h2>
+    
+            <div class="input-group">
+                <div class="input-container">
+                    <input type="text" name="name" placeholder="Nombre y Apellido">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+    
+                <div class="input-container">
+                    <input type="tel" name="phone" placeholder="Teléfono Celular">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+    
+                <div class="input-container">
+                    <input type="email" name="email" placeholder="Correo">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+    
+                <div class="input-container">
+                    <textarea name="message" placeholder="Detalles de Registro"></textarea>
+                </div>
+    
+                <input type="submit" name="send" class="btn" value="Enviar Registro" onclick="myFunction()">
+            </div>
+        </form>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-content container">
+            <p>&copy; 2024 Personal English School. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction(){
+            window.location.href="http://localhost/webingles"
+        }
+    </script>
+
+</body>
+</html>

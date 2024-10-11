@@ -1,0 +1,243 @@
+/* Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+/* Header */
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+}
+.header-txt h1 {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.header-txt p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+/* Header Content */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.btn-1 {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: inline-block;
+}
+.btn-1:hover {
+    background-color: #218838;
+}
+.header-img img {
+    width: 350px;
+    border-radius: 10px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: background 0.3s ease;
+}
+.navbar ul li a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+/* Seccion Nosotros*/
+.about {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    gap: 40px;
+}
+.about-img img {
+    width: 350px;  /* 100%*/
+    border-radius: 10px;
+}
+.about-txt h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.about-txt p {
+    margin-bottom: 10px;
+    line-height: 1.8;
+    text-align: justify;
+}
+/* Seccion de Servicios */
+.Servicios {
+    text-align: center;
+    padding: 50px 0;
+}
+.Servicios h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.Servicios-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.servicio-1 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+.servicio-1 i {
+    font-size: 50px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+.servicio-1 h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+/* Seccion de Formulario */
+.formulario {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.input-container {
+    position: relative;
+    flex: 1;
+    min-width: 250px;
+}
+.input-container input,
+.input-container textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+}
+.input-container i {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: #007bff;
+}
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+/* sitio web responsivo, se ajusta a diferentes tipos de pantalla */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-icono {
+        display: block;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-img img {
+        width: 100%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .Servicios-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-txt h1 {
+        font-size: 32px;
+    }
+
+    .header-txt p {
+        font-size: 16px;
+    }
+
+    .btn-1 {
+        padding: 10px 15px;
+    }
+
+    .Servicios-content {
+        gap: 10px;
+    }
+
+    .servicio-1 {
+        width: 100%;
+    }
+}
